@@ -35,7 +35,7 @@ const upload = multer()
 //     res.send(req.file)
 //   });
 
-app.post("/upload", upload.single('file'), (req, res) => {
+app.post("upload", upload.single('file'), (req, res) => {
     console.log("req.file:", req.file)
     const wb = xlsx.readFile(req.file.originalname)
     const ws = wb.Sheets["Sheet1"]
@@ -50,7 +50,7 @@ app.post("/upload", upload.single('file'), (req, res) => {
     console.log(wb.Sheets)
 })
 
-app.get("/get", async (req, res) => {
+app.get("get", async (req, res) => {
     const dat = await dataModel.find({});
     // console.log(dat)
     res.send(dat)
