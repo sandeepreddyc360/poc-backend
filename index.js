@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 const dataModel = require("./models/models")
 
-mongoose.connect("mongodb://localhost:27017/excel", { useNewUrlParser: true, useUnifiedTopology: true }).then(
+mongoose.connect("mongodb+srv://sandeep:sandeep@cluster0.dmtcf.mongodb.net/carton_print?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true }).then(
     (res) => {
         console.log("Connected to database");
     },
