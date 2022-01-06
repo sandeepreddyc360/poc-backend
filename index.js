@@ -18,6 +18,10 @@ mongoose.connect("mongodb://localhost:27017/excel", { useNewUrlParser: true, use
 )
 
 
+app.get("/",(req,res)=>{
+    res.send("api running ......")
+})
+
 const xlsx = require('xlsx');
 
 const multer = require('multer')
