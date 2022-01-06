@@ -1,4 +1,5 @@
 const express = require("express")
+require("dotenv").config()
 const bodyParser = require('body-parser')
 const mongoose = require("mongoose")
 const app = express();
@@ -58,6 +59,6 @@ app.get("/get", async (req, res) => {
 
 
 
-app.listen(8080, function () {
-    console.log('listening on 8080')
+app.listen(process.env.PORT, function () {
+    console.log(`listening on ${process.env.PORT}`)
 })

@@ -13,6 +13,7 @@
     "circular-json": "^0.5.9",
     "convert-excel-to-json": "^1.7.0",
     "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
     "express": "^4.17.2",
     "fs": "^0.0.1-security",
     "mongodb": "^3.3.4",
@@ -22,7 +23,6 @@
     "path": "^0.12.7",
     "xlsx": "^0.17.4"
   },
-  "devDependencies": {},
   "description": "��#\u0000 \u0000p\u0000o\u0000c\u0000-\u0000b\u0000a\u0000c\u0000k\u0000e\u0000n\u0000d\u0000\r\u0000 \u0000",
   "repository": {
     "type": "git",
