@@ -186,7 +186,7 @@ app.get('/update', async (req, res) => {
 })
 
 
-app.listen(process.env.PORT, function () {
+app.listen(8080, function () {
     console.log("server started on port", process.env.PORT)
 })
 
