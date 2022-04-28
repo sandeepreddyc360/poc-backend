@@ -127,7 +127,7 @@ app.post('/allocate', async (request, response) => {
     }
 })
 
-
+//testing purpose create apis
 app.get('/update', async (req, res) => {
     try {
         // will return data with process = false and count of CONS_ID
